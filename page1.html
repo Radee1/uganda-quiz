@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>UG Quiz</title>
+</head>
+
+<body>
+    <nav id="topnav">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#"><strong>UG Quiz Game</strong></a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobilemenu">
+        </div>
+    </nav>
+    <br><br>
+
+    <div id="president-section">
+        <br><br>
+        <table class="qz-table">
+            <tr>
+                <td colspan="2">
+                    <h2 class="question">Who is the current president of Uganda?</h2>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Kizza Kifefe Besigye" id="kiza" onclick="kiza()" />
+                </td>
+                <td>
+                    <input type="submit" value="Yoweri Kaguta Museveni" id="yoweri" onclick="correct1()" />
+                    <input type="hidden" value="" id="score">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Robert Ssentamu Kyagulanyi" id="bobi" onclick="bobi()" />
+                </td>
+                <td>
+                    <input type="button" value="Lord Fred Ssebata" id="fred" onclick="fred()" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="red" value="&#8592; BACK" type="button" onclick="page1()" />
+                </td>
+                <td>
+                    <input class="green" value="NEXT &#8594;" type="button" onclick="page2()" />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="geog-section">
+        <br><br>
+        <table class="qz-table">
+            <tr>
+                <td colspan="2">
+                    <h2 class="question">In which part of Africa is Uganda found?</h2>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="North Africa" id="north" onclick="north()" />
+                </td>
+                <td>
+                    <input type="submit" value="Central Africa" id="caf" onclick="caf()" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="South Africa" id="saf" onclick="saf()" />
+                </td>
+                <td>
+                    <input type="button" value="East Africa" id="eaf" onclick="correct2()" />
+                    <input type="hidden" value="" id="score">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="red" value="&#8592; BACK" type="button" onclick="page1()" />
+                </td>
+                <td>
+                    <input class="green" value="NEXT &#8594;" type="button" onclick="page3()" />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="independence-section">
+        <br><br>
+        <table class="qz-table">
+            <tr>
+                <td colspan="2">
+                    <h2 class="question">When did Uganda become an independent state?</h2>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="4th of July 2000" id="fourth" onclick="fourth()" />
+                </td>
+                <td>
+                    <input type="submit" value="5th of April" id="fifth" onclick="fifth()" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="6th of October 1962" id="uhuru" onclick="correct3()" />
+                    <input type="hidden" value="" id="score">
+                </td>
+                <td>
+                    <input type="button" value="6th October 1964" id="sixth" onclick="sixth()" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="red" value="&#8592; BACK" type="button" onclick="page2()" />
+                </td>
+                <td>
+                    <input class="green" value="NEXT &#8594;" type="button" onclick="page4()" />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="flag-section">
+        <br><br>
+        <table class="qz-table">
+            <tr>
+                <td colspan="2">
+                    <h2 class="question">What are the Uganda flag colors?</h2>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Black, Yellow, Red" id="byr" onclick="correct4()" />
+                    <input type="hidden" value="" id="score">
+                </td>
+                <td>
+                    <input type="submit" value="Yellow, Black, Red" id="ybr" onclick="ybr()" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" value="Red, Green, Gold" id="rgg" onclick="rgg()" />
+                </td>
+                <td>
+                    <input type="button" value="Black, Yellow, Black" id="byb" onclick="byb()" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="red" value="&#8592; BACK" type="button" onclick="page3()" />
+                </td>
+                <td>
+                    <input class="green" value="NEXT &#8594;" type="submit" onclick="page5()" />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="neigbor-section">
+        <br><br>
+        <table class="qz-table">
+            <tr>
+                <td colspan="2">
+                    <h2 class="question">Which country neighbors Uganda to the north?</h2>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Kenya" id="ke" onclick="ke()" />
+                </td>
+                <td>
+                    <input type="submit" value="Tanzania" id="tz" onclick="tz()" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Rwanda" id="rw" onclick="rw()" />
+                </td>
+                <td>
+                    <input type="submit" value="South Sudan" id="ss" onclick="correct5()" />
+                    <input type="hidden" value="" id="score">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input class="red" value="&#8592; BACK" type="button" onclick="page4()" />
+                </td>
+                <td>
+                    <input class="green" value="SEE RESULTS &#8594;" type="button" onclick="results()" />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="results-section">
+        <br><br>
+        <table class="qz-table">
+            <tr>
+                <td colspan="2">
+                    <h2 class="question">You scored<b id="points"> out of 5!</b></h2>
+                    <br>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input class="green" value="&#8592; SEE THE CORRECT ANSWERS" type="button" onclick="page5()" />
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <script src="assets/js/quiz.js"></script>
+</body>
+<footer>
+    <div class="foot center">
+        <small>Copyright ugquiz &copy 2022 : Rose Adee</small>
+    </div>
+</footer>
+
+</html>
