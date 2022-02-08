@@ -96,7 +96,7 @@ function page5() {
 }
 
 //question1 about the president 
-function correct() {
+function correct1() {
     calc();
     var input = document.getElementById("yoweri");
     input.setAttribute("class", "choice");
@@ -135,7 +135,7 @@ function fred() {
 }
 
 //Question2 about the geography 
-function correct() {
+function correct2() {
     calc();
     var input = document.getElementById("eaf");
     input.setAttribute("class", "choice");
@@ -143,4 +143,69 @@ function correct() {
     document.getElementById('caf').removeAttribute("onclick");
     document.getElementById('north').removeAttribute("onclick");
     document.getElementById('saf').removeAttribute("onclick");
+}
+
+function caf() {
+    var rong = document.getElementById("caf");
+    rong.setAttribute("class", "choice");
+    document.getElementById('eaf').removeAttribute("onclick");
+    document.getElementById('caf').removeAttribute("onclick");
+    document.getElementById('north').removeAttribute("onclick");
+    document.getElementById('saf').removeAttribute("onclick");
+}
+
+function north() {
+    var rong = document.getElementById("north");
+    rong.setAttribute("class", "choice");
+    document.getElementById('eaf').removeAttribute("onclick");
+    document.getElementById('caf').removeAttribute("onclick");
+    document.getElementById('north').removeAttribute("onclick");
+    document.getElementById('saf').removeAttribute("onclick");
+}
+
+function saf() {
+    var rong = document.getElementById("saf");
+    rong.setAttribute("class", "choice");
+    document.getElementById('eaf').removeAttribute("onclick");
+    document.getElementById('caf').removeAttribute("onclick");
+    document.getElementById('north').removeAttribute("onclick");
+    document.getElementById('saf').removeAttribute("onclick");
+}
+
+//Question3 about independence
+function correct3(){
+    calc();
+    var input = document.getElementById("uhuru");
+    input.setAttribute("class", "choice");
+    document.getElementById('uhuru').removeAttribute("onclick");
+    document.getElementById('fourth').removeAttribute("onclick");
+    document.getElementById('fifth').removeAttribute("onclick");
+    document.getElementById('sixth').removeAttribute("onclick");
+}
+
+function fourth() {
+    var rong = document.getElementById("fourth");
+    rong.setAttribute("class", "choice");
+    document.getElementById('uhuru').removeAttribute("onclick");
+    document.getElementById('fourth').removeAttribute("onclick");
+    document.getElementById('fifth').removeAttribute("onclick");
+    document.getElementById('sixth').removeAttribute("onclick");
+}
+
+function fifth() {
+    var rong = document.getElementById("fifth");
+    rong.setAttribute("class", "choice");
+    document.getElementById('uhuru').removeAttribute("onclick");
+    document.getElementById('fourth').removeAttribute("onclick");
+    document.getElementById('fifth').removeAttribute("onclick");
+    document.getElementById('sixth').removeAttribute("onclick");
+}
+
+function sixth() {
+    var rong = document.getElementById("sixth");
+    rong.setAttribute("class", "choice");
+    document.getElementById('uhuru').removeAttribute("onclick");
+    document.getElementById('fourth').removeAttribute("onclick");
+    document.getElementById('fifth').removeAttribute("onclick");
+    document.getElementById('sixth').removeAttribute("onclick");
 }
