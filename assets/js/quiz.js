@@ -37,3 +37,60 @@ function show(y){
     var target = document.getElementById(y);
     target.setAttribute("style", "display:inline;");
 }
+
+hide("geog-section");
+hide("neighbor-section");
+hide("flag-section");
+hide("independence-section");
+hide("results-section");
+show("president-section");
+
+//president question
+function page1() {
+    hide("geog-section");
+    hide("neighbor-section");
+    hide("flag-section");
+    hide("results-section");
+    hide("independence-section");
+    show("president-section");
+}
+
+//geog question
+function page2() {
+    hide("president-section");
+    hide("neighbor-section");
+    hide("flag-section");
+    hide("results-section");
+    hide("independence-section");
+    show("geog-section");
+}
+
+//independence question
+function page3() {
+    hide("president-section");
+    hide("geog-section");
+    hide("results-section");
+    hide("flag-section");
+    hide("neighbor-section");
+    show("independence-section");
+}
+
+//flag question
+function page4() {
+    hide("president-section");
+    hide("independence-section");
+    hide("geog-section");
+    hide("neighbor-section");
+    hide("results-section");
+    show("flag-section");
+}
+
+//neighbors question
+function page5() {
+    hide("president-section");
+    hide("results-section");
+    hide("geog-section");
+    hide("independence-section");
+    hide("flag-section");
+    show("neighbor-section");
+}
