@@ -45,7 +45,7 @@ hide("independence-section");
 hide("results-section");
 show("president-section");
 
-//president question
+//president page
 function page1() {
     hide("geog-section");
     hide("neighbor-section");
@@ -55,7 +55,7 @@ function page1() {
     show("president-section");
 }
 
-//geog question
+//geog page
 function page2() {
     hide("president-section");
     hide("neighbor-section");
@@ -65,7 +65,7 @@ function page2() {
     show("geog-section");
 }
 
-//independence question
+//independence page
 function page3() {
     hide("president-section");
     hide("geog-section");
@@ -75,7 +75,7 @@ function page3() {
     show("independence-section");
 }
 
-//flag question
+//flag page
 function page4() {
     hide("president-section");
     hide("independence-section");
@@ -85,7 +85,7 @@ function page4() {
     show("flag-section");
 }
 
-//neighbors question
+//neighbors page
 function page5() {
     hide("president-section");
     hide("results-section");
@@ -93,4 +93,43 @@ function page5() {
     hide("independence-section");
     hide("flag-section");
     show("neighbor-section");
+}
+
+//question1 president section
+function correct() {
+    calc();
+    var input = document.getElementById("yoweri");
+    input.setAttribute("class", "choice");
+    //remove scoring from choice answer
+    document.getElementById('yoweri').removeAttribute("onclick");
+    document.getElementById('kiza').removeAttribute("onclick");
+    document.getElementById('bobi').removeAttribute("onclick");
+    document.getElementById('fred').removeAttribute("onclick");
+}
+
+function kiza() {
+    var rong = document.getElementById("kiza");
+    rong.setAttribute("class", "choice");
+    document.getElementById('yoweri').removeAttribute("onclick");
+    document.getElementById('kiza').removeAttribute("onclick");
+    document.getElementById('bobi').removeAttribute("onclick");
+    document.getElementById('fred').removeAttribute("onclick");
+}
+
+function bobi() {
+    var rong = document.getElementById("bobi");
+    rong.setAttribute("class", "choice");
+    document.getElementById('yoweri').removeAttribute("onclick");
+    document.getElementById('kiza').removeAttribute("onclick");
+    document.getElementById('bobi').removeAttribute("onclick");
+    document.getElementById('fred').removeAttribute("onclick");
+}
+
+function fred() {
+    var rong = document.getElementById("fred");
+    rong.setAttribute("class", "choice");
+    document.getElementById('yoweri').removeAttribute("onclick");
+    document.getElementById('kiza').removeAttribute("onclick");
+    document.getElementById('bobi').removeAttribute("onclick");
+    document.getElementById('fred').removeAttribute("onclick");
 }
