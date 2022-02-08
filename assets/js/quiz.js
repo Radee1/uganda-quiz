@@ -95,7 +95,7 @@ function page5() {
     show("neighbor-section");
 }
 
-//question1 president section
+//question1 about the president 
 function correct() {
     calc();
     var input = document.getElementById("yoweri");
@@ -132,4 +132,15 @@ function fred() {
     document.getElementById('kiza').removeAttribute("onclick");
     document.getElementById('bobi').removeAttribute("onclick");
     document.getElementById('fred').removeAttribute("onclick");
+}
+
+//Question2 about the geography 
+function correct() {
+    calc();
+    var input = document.getElementById("eaf");
+    input.setAttribute("class", "choice");
+    document.getElementById('eaf').removeAttribute("onclick");
+    document.getElementById('caf').removeAttribute("onclick");
+    document.getElementById('north').removeAttribute("onclick");
+    document.getElementById('saf').removeAttribute("onclick");
 }
