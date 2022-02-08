@@ -209,3 +209,41 @@ function sixth() {
     document.getElementById('fifth').removeAttribute("onclick");
     document.getElementById('sixth').removeAttribute("onclick");
 }
+
+//Question4 about the flag colors
+function correct4() {
+    calc();
+    var input = document.getElementById("byr");
+    input.setAttribute("class", "choice");
+    document.getElementById('byr').removeAttribute("onclick");
+    document.getElementById('rgg').removeAttribute("onclick");
+    document.getElementById('ybr').removeAttribute("onclick");
+    document.getElementById('byb').removeAttribute("onclick");
+}
+
+function ybr() {
+    var rong = document.getElementById("ybr");
+    rong.setAttribute("class", "choice");
+    document.getElementById('byr').removeAttribute("onclick");
+    document.getElementById('rgg').removeAttribute("onclick");
+    document.getElementById('ybr').removeAttribute("onclick");
+    document.getElementById('byb').removeAttribute("onclick");
+}
+
+function rgg() {
+    var rong = document.getElementById("rgg");
+    rong.setAttribute("class", "choice");
+    document.getElementById('byr').removeAttribute("onclick");
+    document.getElementById('rgg').removeAttribute("onclick");
+    document.getElementById('ybr').removeAttribute("onclick");
+    document.getElementById('byb').removeAttribute("onclick");
+}
+
+function byb() {
+    var rong = document.getElementById("byb");
+    rong.setAttribute("class", "choice");
+    document.getElementById('byr').removeAttribute("onclick");
+    document.getElementById('rgg').removeAttribute("onclick");
+    document.getElementById('ybr').removeAttribute("onclick");
+    document.getElementById('byb').removeAttribute("onclick");
+}
