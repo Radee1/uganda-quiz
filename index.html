@@ -14,18 +14,35 @@
 </head>
 
 <body>
-    <nav>
+    <nav id="topnav">
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="#"><strong>UG Quiz Game</strong></a>
+                </li>
+            </ul>
+        </div>
+        <div class="mobilemenu">
+
+        </div>
 
     </nav>
     <div>
+        <div>
+            <img id="hero-img" src="assets/images/dice.jpg">
+        </div>
+        <form id="form" onsubmit="return false;">
+            <input type="text" placeholder="CREATE A USERNAME OR GAMING NAME" id="name" />
+            <input id="submit" value="CREATE USERNAME" type="submit" onclick="username()" />
+        </form>
 
     </div>
 
     <script src="assets/js/quiz.js"></script>
 </body>
 <footer>
-    <div>
-
+    <div class="foot center">
+        <small>Copyright ugquiz &copy 2022 : Rose Adee</small>
     </div>
 </footer>
 
