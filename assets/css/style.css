@@ -1,0 +1,188 @@
+#topnav {
+    background: #4c93ba;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: poppins, sans-serif;
+    width: 100%;
+    padding: 15px;
+    position: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+input {
+    margin: 2% 10%;
+    width: 80%;
+    padding: 25px;
+    text-align: center;
+}
+
+#submit {
+    width: 250px;
+    text-align: center;
+    margin: 0% 40%;
+    background: #c8d6e5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    background: #1e272e;
+    text-align: center;
+    padding: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+    color: white;
+}
+
+/* (A) wrapper*/
+#quizWrap {
+    width: 100%;
+    padding: 10% 5%;
+    /*recommended fixed height if there is content below the quiz so that page layout does not jump*/
+    /*height:250px;*/
+}
+
+/* (B) Question*/
+#quizQn {
+    padding: 45px;
+    background: #1e272e;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+/* (C) Answers*/
+#quizAns {
+    margin: 30px 0;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+}
+
+#quizAns input[type=radio] {
+    display: none;
+}
+
+#quizAns label {
+    background: #fafafa;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 25px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: left;
+}
+
+#quizAns label.correct {
+    background: #d8ffc4;
+    border: 1px solid #60a03f;
+}
+
+#quizAns label.wrong {
+    background: #ffe8e8;
+    border: 1px solid #c78181;
+}
+
+#hero-img {
+    width: 40%;
+    margin: 5% 30% 1% 30%;
+    height: 350px;
+}
+
+#gameover-img {
+    width: 50%;
+    margin: 0% 25% 0% 25%;
+    height: 350px;
+}
+
+/* (D) the body does not require much*/
+html,
+body {
+    background: #d2dae2;
+    font-family: poppins, sans-serif;
+}
+
+.question {
+    padding: 45px;
+    background: #1e272e;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+.red {
+    color: #ff6b81;
+}
+
+.green {
+    color: #009432;
+}
+
+.wrong {
+    background: #ff6b81;
+    color: white;
+}
+
+.correct {
+    background: #009432;
+    color: white;
+}
+
+.choice {
+    background: #ffeaa7;
+}
+
+table {
+    width: 90%;
+    margin: 5%;
+    text-align: center;
+    table-layout: fixed;
+}
+
+.bs {
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+/*media queries*/
+@media screen and (max-width: 768px) {
+    input {
+        margin: 1% 2%;
+        width: 100%;
+        padding: 25px;
+    }
+
+    table {
+        width: 95%;
+        margin: 2%;
+        table-layout: fixed;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    input {
+        margin: 1% 2%;
+        width: 100%;
+        padding: 25px;
+        text-align: left;
+    }
+
+    table {
+        width: 95%;
+        margin: 2%;
+        text-align: left;
+        table-layout: fixed;
+    }
+}
