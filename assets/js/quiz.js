@@ -247,3 +247,41 @@ function byb() {
     document.getElementById('ybr').removeAttribute("onclick");
     document.getElementById('byb').removeAttribute("onclick");
 }
+
+//Question5 about neighbors
+function correct5() {
+    calc();
+    var input = document.getElementById("ss");
+    input.setAttribute("class", "choice");
+    document.getElementById('rw').removeAttribute("onclick");
+    document.getElementById('tz').removeAttribute("onclick");
+    document.getElementById('ke').removeAttribute("onclick");
+    document.getElementById('ss').removeAttribute("onclick");
+}
+
+function ke() {
+    var rong = document.getElementById("ke");
+    rong.setAttribute("class", "choice");
+    document.getElementById('rw').removeAttribute("onclick");
+    document.getElementById('tz').removeAttribute("onclick");
+    document.getElementById('ke').removeAttribute("onclick");
+    document.getElementById('ss').removeAttribute("onclick");
+}
+
+function tz() {
+    var rong = document.getElementById("tz");
+    rong.setAttribute("class", "choice");
+    document.getElementById('rw').removeAttribute("onclick");
+    document.getElementById('tz').removeAttribute("onclick");
+    document.getElementById('ke').removeAttribute("onclick");
+    document.getElementById('ss').removeAttribute("onclick");
+}
+
+function rw() {
+    var rong = document.getElementById("rw");
+    rong.setAttribute("class", "choice");
+    document.getElementById('rw').removeAttribute("onclick");
+    document.getElementById('tz').removeAttribute("onclick");
+    document.getElementById('ke').removeAttribute("onclick");
+    document.getElementById('ss').removeAttribute("onclick");
+}
