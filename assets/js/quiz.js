@@ -95,7 +95,7 @@ function page5() {
     show("neighbor-section");
 }
 
-//question1 about the president 
+//questionOne about the president 
 function correct1() {
     calc();
     var input = document.getElementById("yoweri");
@@ -134,7 +134,7 @@ function fred() {
     document.getElementById('fred').removeAttribute("onclick");
 }
 
-//Question2 about the geography 
+//questionTwo about the geography 
 function correct2() {
     calc();
     var input = document.getElementById("eaf");
@@ -172,7 +172,7 @@ function saf() {
     document.getElementById('saf').removeAttribute("onclick");
 }
 
-//Question3 about independence
+//questionThree about independence
 function correct3(){
     calc();
     var input = document.getElementById("uhuru");
@@ -210,7 +210,7 @@ function sixth() {
     document.getElementById('sixth').removeAttribute("onclick");
 }
 
-//Question4 about the flag colors
+//questionFour about the flag colors
 function correct4() {
     calc();
     var input = document.getElementById("byr");
@@ -248,7 +248,7 @@ function byb() {
     document.getElementById('byb').removeAttribute("onclick");
 }
 
-//Question5 about neighbors
+//questionFive about neighbors
 function correct5() {
     calc();
     var input = document.getElementById("ss");
@@ -284,4 +284,27 @@ function rw() {
     document.getElementById('tz').removeAttribute("onclick");
     document.getElementById('ke').removeAttribute("onclick");
     document.getElementById('ss').removeAttribute("onclick");
+}
+
+//show results
+function results() {
+    hide("neighbor-section");
+    show("results-section");
+
+    var questionOne = document.getElementById("yoweri");
+    questionOne.setAttribute("class", "correct");
+
+    var questionTwo = document.getElementById("eaf");
+    questionTwo.setAttribute("class", "correct");
+
+    var questionThree = document.getElementById("uhuru");
+    questionThree.setAttribute("class", "correct");
+
+    var questionFour = document.getElementById("byr");
+    questionFour.setAttribute("class", "correct");
+
+    var questionFive = document.getElementById("ss");
+    questionFive.setAttribute("class", "correct");
+
+    document.getElementById("points").innerHTML = score;
 }
