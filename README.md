@@ -5,7 +5,7 @@ The site/program contains two HTML (index.html and page1.html) pages, one CSS fi
 
 The UG Quiz is a website that aims to show how pure JavaScript works in a practical setting. The site will be aimed at persons who are interested in not just advanced JavaScript principles, but also history, geography, and a passion for foreign nations, particularly Uganda. The UG Quiz is a completely responsive JavaScript quiz game that allows players to setup usernames or gamer identities, take the quiz, and display their scores.
 
-![The UG Quiz mockups](assets/images/UG-Quiz-mockup.jpg)
+![The UG Quiz mockups](assets/images/UGQuizmockups.jpg)
 
 ## Features
 
@@ -126,14 +126,18 @@ No errors were found when passing through the official (Jigsaw) validator
 No errors were found when passing through the official Jshint validator
 
 The following metrics were returned:
-There are 11 functions in this file.
-Function with the largest signature takes 2 arguments, while the median is 0.
-Largest function has 10 statements in it, while the median is 3.
-The most complex function has a cyclomatic complexity value of 4 while the median is 2.
+
+There are 31 functions in this file.
+
+Function with the largest signature take 1 arguments, while the median is 0.
+
+Largest function has 13 statements in it, while the median is 6.
+
+The most complex function has a cyclomatic complexity value of 3 while the median is 1.
 
 * Accessibility
 
-![Accessibility]()
+The accessibility score for desktop applications using lighthouse is 87.
 
 ### Unfixed Bugs
 
@@ -173,5 +177,3 @@ The site was deployed to GitHub pages. The steps to deploy are as follows:
  * All the images used in the readMe are extracted from the UG Quiz game.
 
  * Pixabay-https://pixabay.com/images/search/dice/
-
-

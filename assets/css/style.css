@@ -4,6 +4,7 @@
     align-items: center;
     justify-content: space-between;
     font-family: poppins, sans-serif;
+    font-size: larger;
     width: 100%;
     padding: 15px;
     position: fixed;
@@ -11,7 +12,7 @@
 
 a {
     text-decoration: none;
-    color: white;
+    color: #ffffff;
 }
 
 input {
