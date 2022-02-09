@@ -12,7 +12,7 @@ function username() {
     } else if (input.length < 3) {
         alert("Name must be atleast 3 characters");
     } else {
-        alert(`Hi ${input} and welcome to Uganda online quiz game! Press Ok to continue to the quiz`);
+        alert("Hi " + input + " and welcome to Uganda online quiz game! Press Ok to continue to the quiz");
         window.location = "page1.html";
     }
 }

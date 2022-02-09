@@ -1,3 +1,4 @@
+/*----The navigation bar----*/
 #topnav {
     background: #4c93ba;
     display: flex;
@@ -22,6 +23,7 @@ input {
     text-align: center;
 }
 
+/*---the create username button----*/
 #submit {
     width: 250px;
     text-align: center;
@@ -41,6 +43,7 @@ input {
     box-sizing: border-box;
 }
 
+/*----the footer----*/
 footer {
     background: #1e272e;
     text-align: center;
@@ -67,7 +70,7 @@ footer {
     height: 250px;
 }
 
-/* (D) the body does not require much*/
+/* the body does not require much*/
 html,
 body {
     background: #d2dae2;
@@ -116,7 +119,7 @@ table {
     border-radius: 10px;
 }
 
-/*media queries*/
+/*---the media queries---*/
 @media screen and (max-width: 768px) {
     input {
         margin: 1% 2%;
