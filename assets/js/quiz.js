@@ -45,6 +45,10 @@ hide("independence-section");
 hide("results-section");
 show("president-section");
 
+function firstPage() {
+    window.location = "index.html";
+}
+
 //president page
 function page1() {
     hide("geog-section");
