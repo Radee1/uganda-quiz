@@ -26,6 +26,12 @@ input {
     text-align: center;
     margin: 0% 40%;
     background: #c8d6e5;
+    border-radius: 5%;
+}
+
+#submit:hover {
+    background: #808e9b;
+    color: white;
 }
 
 * {
@@ -55,8 +61,8 @@ footer {
 }
 
 #hero-img {
-    width: 50%;
-    margin: 5% 30% 1% 30%;
+    width: 40%;
+    margin: 5% 30% 0% 30%;
     height: 250px;
 }
 
@@ -127,6 +133,15 @@ table {
     h2 {
         margin-top: 10%;
     }
+
+    #hero-img {
+        width: 100%;
+        margin: 5% 0% 1% 0%;
+    }
+
+    #submit {
+        margin: 5% 10% 5% 10%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -147,5 +162,14 @@ table {
 
     h2 {
         margin-top: 10%;
+    }
+
+    #hero-img {
+        width: 100%;
+        margin: 5% 0% 1% 0%;
+    }
+
+    #submit {
+        margin: 5% 10% 5% 10%;
     }
 }
